@@ -7,7 +7,6 @@ require 'bundler/setup'
 require 'recaptcha'
 load "./local_env.rb" if File.exists?("./local_env.rb")
 
-<<<<<<< HEAD
 enable :sessions
 
 def db_conn_1()
