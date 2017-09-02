@@ -55,7 +55,12 @@ def send_email(details)
     }
   )
 end
+class MyApp < Sinatra::Base
+ set :run, true
 
+set :bind, '0.0.0.0'
+set :port, 80
+ 
 get '/' do
   @title = "Joseph Mckenizie Consulting"
   message = params[:message] || ''
@@ -286,3 +291,4 @@ not_found do
   redirect '/?message=404'
 end
 
+end
