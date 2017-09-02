@@ -1,1 +1,6 @@
 #!/bin/bash
+
+sudo killall ruby
+sudo killall rackup
+sudo systemctl stop nginx 
+sudo systemctl restart nginx
