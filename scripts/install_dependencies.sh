@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Install"
+echo "Install Dependecies"
